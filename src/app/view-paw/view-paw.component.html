@@ -1,0 +1,26 @@
+<div style="display: flex; justify-content: flex-end;">
+  <button mat-icon-button (click)="closeDialog()" aria-label="Close dialog">
+    <mat-icon>X</mat-icon>
+  </button>
+  </div>
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{selectedPaw.pawName}}</mat-card-title>
+            <mat-card-subtitle>{{selectedPaw.pawBreed}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                {{selectedPaw.pawDescription}}
+            </p>
+            <p>
+                Date Of Birth: {{selectedPaw.dateOfBirth}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button matButton>LIKE</button>
+            <button matButton>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
